@@ -1,0 +1,255 @@
+{
+  "version": "1.0.0",
+  "rss": "<LINK TO RSS FEED>",
+  "discord": {
+    "clientId": "<FILL IN OR REMOVE DISCORD OBJECT>",
+    "smallImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
+    "smallImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+  },
+  "servers": [
+    {
+      "id": "MineSquare-1.20.4",
+      "name": "MineSquare (Minecraft 1.20.4)",
+      "description": "MineSquare Running Minecraft 1.20.4 (Fabric v0.15.10)",
+      "icon": null,
+      "version": "1.0.0",
+      "address": "minesquare.kr:25565",
+      "minecraftVersion": "1.20.4",
+      "discord": {
+        "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
+        "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
+        "largeImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+      },
+      "mainServer": true,
+      "autoconnect": true,
+      "modules": [
+        {
+          "id": "net.fabricmc:fabric-loader:0.15.10",
+          "name": "Fabric (fabric-loader)",
+          "type": "Fabric",
+          "artifact": {
+            "size": 1327662,
+            "MD5": "582b8c44a8afc761c63df88b64e6bb0f",
+            "url": "http://localhost:8080/repo/lib/net/fabricmc/fabric-loader/0.15.10/fabric-loader-0.15.10.jar"
+          },
+          "subModules": [
+            {
+              "id": "1.20.4-fabric-0.15.10",
+              "name": "Fabric (version.json)",
+              "type": "VersionManifest",
+              "artifact": {
+                "size": 2849,
+                "MD5": "64dd56c36c6489ad71753dd5f8d33d41",
+                "url": "http://localhost:8080/repo/versions/1.20.4-fabric-0.15.10/1.20.4-fabric-0.15.10.json"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm:9.6",
+              "name": "Fabric (asm)",
+              "type": "Library",
+              "artifact": {
+                "size": 123598,
+                "MD5": "6f8bccf756f170d4185bb24c8c2d2020",
+                "url": "http://localhost:8080/repo/lib/org/ow2/asm/asm/9.6/asm-9.6.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-analysis:9.6",
+              "name": "Fabric (asm-analysis)",
+              "type": "Library",
+              "artifact": {
+                "size": 34041,
+                "MD5": "31c84ef7cc893fb278952ae2d6a2674f",
+                "url": "http://localhost:8080/repo/lib/org/ow2/asm/asm-analysis/9.6/asm-analysis-9.6.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-commons:9.6",
+              "name": "Fabric (asm-commons)",
+              "type": "Library",
+              "artifact": {
+                "size": 72194,
+                "MD5": "9e317c75534bd1da8c00a67c618ab288",
+                "url": "http://localhost:8080/repo/lib/org/ow2/asm/asm-commons/9.6/asm-commons-9.6.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-tree:9.6",
+              "name": "Fabric (asm-tree)",
+              "type": "Library",
+              "artifact": {
+                "size": 51935,
+                "MD5": "6062608f1a98afe1e853d01fa1221a9e",
+                "url": "http://localhost:8080/repo/lib/org/ow2/asm/asm-tree/9.6/asm-tree-9.6.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-util:9.6",
+              "name": "Fabric (asm-util)",
+              "type": "Library",
+              "artifact": {
+                "size": 91131,
+                "MD5": "bd3bc1c176a787373e9a031073c9574b",
+                "url": "http://localhost:8080/repo/lib/org/ow2/asm/asm-util/9.6/asm-util-9.6.jar"
+              }
+            },
+            {
+              "id": "net.fabricmc:sponge-mixin:0.13.3+mixin.0.8.5",
+              "name": "Fabric (sponge-mixin)",
+              "type": "Library",
+              "artifact": {
+                "size": 1458875,
+                "MD5": "9dcf01250f72212bf97f0fef55ba5acd",
+                "url": "http://localhost:8080/repo/lib/net/fabricmc/sponge-mixin/0.13.3+mixin.0.8.5/sponge-mixin-0.13.3+mixin.0.8.5.jar"
+              }
+            },
+            {
+              "id": "net.fabricmc:intermediary:1.20.4",
+              "name": "Fabric (intermediary)",
+              "type": "Library",
+              "artifact": {
+                "size": 608319,
+                "MD5": "3a1cade1634c518db6147c9771686ea9",
+                "url": "http://localhost:8080/repo/lib/net/fabricmc/intermediary/1.20.4/intermediary-1.20.4.jar"
+              }
+            }
+          ]
+        },
+        {
+          "id": "generated.fabricmod:caramelchat:1.1.1@jar",
+          "name": "CaramelChat",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 127984,
+            "url": "http://localhost:8080/servers/MineSquare-1.20.4/fabricmods/required/caramelChat-mc1.20.4-fabric-1.1.1.jar",
+            "MD5": "ce211fbef99feb36a042efd65ac28876"
+          }
+        },
+        {
+          "id": "generated.fabricmod:fabric-api:0.96.4+1.20.4@jar",
+          "name": "Fabric API",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 2160893,
+            "url": "http://localhost:8080/servers/MineSquare-1.20.4/fabricmods/optionalon/fabric-api-0.96.4+1.20.4.jar",
+            "MD5": "2ef9ba9b1cf087f4356ebe55366fb9ef"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "generated.fabricmod:iris:1.6.17@jar",
+          "name": "Iris",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 2421865,
+            "url": "http://localhost:8080/servers/MineSquare-1.20.4/fabricmods/optionalon/iris-mc1.20.4-1.6.17.jar",
+            "MD5": "cc391df9e929608c37a04a342c6babb3"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "journeymap:journeymap:5.9.21@jar",
+          "name": "Journeymap",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 7262801,
+            "url": "http://localhost:8080/servers/MineSquare-1.20.4/fabricmods/optionalon/journeymap-1.20.4-5.9.21-fabric.jar",
+            "MD5": "441ed4e89512c821e2203d7c3030ea61"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "me.jellysquid.mods:lithium:0.12.1@jar",
+          "name": "Lithium",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 716022,
+            "url": "http://localhost:8080/servers/MineSquare-1.20.4/fabricmods/optionalon/lithium-fabric-mc1.20.4-0.12.1.jar",
+            "MD5": "83da6729d5402dc42eca740a96f97346"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "com.terraformersmc:modmenu:9.0.0@jar",
+          "name": "Mod Menu",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 724484,
+            "url": "http://localhost:8080/servers/MineSquare-1.20.4/fabricmods/optionalon/modmenu-9.0.0.jar",
+            "MD5": "7eb06d459405ed6c87b16f4c5be4493d"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "me.jellysquid.mods:sodium:0.5.8+mc1.20.4@jar",
+          "name": "Sodium",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 949085,
+            "url": "http://localhost:8080/servers/MineSquare-1.20.4/fabricmods/optionalon/sodium-fabric-0.5.8+mc1.20.4.jar",
+            "MD5": "d7753a50ca37f50abb10465a9a425dac"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "de.maxhenkel:voicechat:1.20.4-2.5.12@jar",
+          "name": "Simple Voice Chat",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 8125595,
+            "url": "http://localhost:8080/servers/MineSquare-1.20.4/fabricmods/optionalon/voicechat-fabric-1.20.4-2.5.12.jar",
+            "MD5": "0fe58d8ccd88eba70814ebb8f14e187a"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "3D Minecraft V1.4.4.zip",
+          "name": "3D Minecraft V1.4.4.zip",
+          "type": "File",
+          "artifact": {
+            "size": 693828,
+            "url": "http://localhost:8080/servers/MineSquare-1.20.4/files/resourcepacks/3D%20Minecraft%20V1.4.4.zip",
+            "MD5": "2e9f7a9811ca69a50669c8126b26661c",
+            "path": "resourcepacks/3D Minecraft V1.4.4.zip"
+          }
+        },
+        {
+          "id": "3D+Minecraft+V1.4.2.zip",
+          "name": "3D+Minecraft+V1.4.2.zip",
+          "type": "File",
+          "artifact": {
+            "size": 684294,
+            "url": "http://localhost:8080/servers/MineSquare-1.20.4/files/resourcepacks/3D+Minecraft+V1.4.2.zip",
+            "MD5": "fab15cfb0f67e0c73001f5ffd56d721a",
+            "path": "resourcepacks/3D+Minecraft+V1.4.2.zip"
+          }
+        },
+        {
+          "id": "§6§lClassic+3D+v15.1+-+1.19.zip",
+          "name": "§6§lClassic+3D+v15.1+-+1.19.zip",
+          "type": "File",
+          "artifact": {
+            "size": 7390161,
+            "url": "http://localhost:8080/servers/MineSquare-1.20.4/files/resourcepacks/%C2%A76%C2%A7lClassic+3D+v15.1+-+1.19.zip",
+            "MD5": "5c041d06e1eaf87a13282ca1f97af9cb",
+            "path": "resourcepacks/§6§lClassic+3D+v15.1+-+1.19.zip"
+          }
+        }
+      ]
+    }
+  ]
+}
