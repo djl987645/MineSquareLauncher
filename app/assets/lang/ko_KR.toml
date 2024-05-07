@@ -27,7 +27,7 @@ loginPasswordError = "* 필수" # * Required
 loginPasswordPlaceholder = "비밀번호" # PASSWORD
 loginForgotPasswordLink = "https://minecraft.net/password/forgot/"
 loginForgotPasswordText = "비밀번호를 잊으셨나요?" # forgot password?
-loginRememberMeText = "로그인 기억하십니까?" # remember me?
+loginRememberMeText = "자동 로그인" # remember me?
 loginButtonText = "로그인" # LOGIN
 loginNeedAccountLink = "https://minecraft.net/store/minecraft-java-edition/"
 loginNeedAccountText = "계정이 필요하신가요?" # Need an Account?
@@ -190,7 +190,7 @@ extractingJava = "Java 추출 중" # "Extracting Java"
 javaInstalled = "Java가 설치되었습니다!" # "
 
 [js.landing.dlAsync]
-loadingServerInfo = "서버 정보를 불러오는 중 입니다.."
+loadingServerInfo = "서버 정보를 불러오는 중.."
 fatalError = "치명적 오류"
 unableToLoadDistributionIndex = "배포 인덱스 사본을 불러오는 데 실패했습니다. 자세한 정보는 콘솔 (CTRL + Shift + i)을 확인하세요."
 pleaseWait = "기다려 주세요.."
