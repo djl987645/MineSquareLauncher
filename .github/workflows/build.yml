@@ -42,7 +42,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: MineSquare_Launcher
-          path: 
+          path: |
             dist/latest*.yml
             dist/MineSquare Launcher-setup-*.exe
             dist/MineSquare Launcher-setup-*.dmg
