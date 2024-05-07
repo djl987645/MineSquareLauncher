@@ -11,7 +11,7 @@
       "id": "MineSquare-1.20.4",
       "name": "MineSquare",
       "description": "경기대학교 마인크래프트 서버, MineSquare 입니다",
-      "icon": "https://cdn.discordapp.com/attachments/444099590573129740/1237400934800429178/c659780e08c79473.jpg?ex=663b82ec&is=663a316c&hm=df41d306bebf1fab9313e724db736cadabba693a6a263b6d86063ac7c107c941&",
+      "icon": "https://raw.githubusercontent.com/djl987645/MineSquareLauncher/master/image/server-icon.png",
       "version": "1.0.0",
       "address": "minesquare.kr:25565",
       "minecraftVersion": "1.20.4",
