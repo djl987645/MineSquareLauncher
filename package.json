@@ -9,7 +9,7 @@
   "bugs": {
     "url": "https://github.com/djl987645/MineSquareLauncher/issues"
   },
-  "private": true,
+  "private": false,
   "main": "index.js",
   "scripts": {
     "start": "electron .",
@@ -46,6 +46,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/djl987645/MineSquareLauncher.git"
+    "url": "https://github.com/djl987645/MineSquareLauncher.git"
   }
 }
