@@ -126,6 +126,16 @@
           }
         },
         {
+          "id": "generated.fabricmod:fabric-api:0.96.4+1.20.4@jar",
+          "name": "Fabric API",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 2160893,
+            "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/9p2sguD7/fabric-api-0.96.4%2B1.20.4.jar",
+            "MD5": "2ef9ba9b1cf087f4356ebe55366fb9ef"
+          }
+        },
+        {
           "id": "generated.fabricmod:iris:1.6.17@jar",
           "name": "Iris",
           "type": "FabricMod",
