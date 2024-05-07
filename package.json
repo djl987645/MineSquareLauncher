@@ -1,6 +1,6 @@
 {
   "name": "MineSquareLauncher",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "productName": "MineSquareLauncher",
   "description": "경기대 마인스퀘어 런처",
   "author": "Daniel Scalzi (https://github.com/dscalzi/) modified my djl987645(https://github.com/djl987645)",
@@ -46,6 +46,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/djl987645/MineSquareLauncher.git"
+    "url": "https://github.com/djl987645/MineSquareLauncher.git"
   }
 }
