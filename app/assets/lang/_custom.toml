@@ -12,7 +12,7 @@ mediaDiscordURL = "https://discord.gg/xD6x3snQ"
 
 [ejs.settings]
 sourceGithubLink = "https://github.com/djl987645/MineSquareLauncher"
-supportLink = "https://github.com/djl987645/MineSquareLauncherissues"
+supportLink = "https://github.com/djl987645/MineSquareLauncher/issues"
 
 [ejs.welcome]
 welcomeHeader = "WELCOME TO MineSquare!"

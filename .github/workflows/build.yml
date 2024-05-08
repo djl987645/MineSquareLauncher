@@ -2,6 +2,8 @@ name: Build
 
 on:
   push:
+    tags:
+      - "v*"
 
 jobs:
   release:
@@ -37,7 +39,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run dist
         shell: bash
-        
+
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
