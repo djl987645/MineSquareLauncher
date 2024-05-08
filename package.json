@@ -1,6 +1,6 @@
 {
   "name": "MineSquareLauncher",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "productName": "MineSquareLauncher",
   "description": "경기대 마인스퀘어 런처",
   "author": "Daniel Scalzi (https://github.com/dscalzi/) modified my djl987645(https://github.com/djl987645)",
@@ -20,7 +20,7 @@
     "lint": "eslint --config .eslintrc.json ."
   },
   "engines": {
-    "node": "20.x.x"
+    "node": ">=20.x.x"
   },
   "dependencies": {
     "@electron/remote": "^2.1.2",
