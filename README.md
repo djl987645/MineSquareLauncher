@@ -164,7 +164,7 @@ macOS용 빌드는 Windows/Linux에서 작동하지 않을 수 있습니다.
 
 원래 저자에게 크레딧을 제공하고 원본 소스에 대한 링크를 제공하십시오. 이것은 무료 소프트웨어이므로 적어도 이 정도는 해주십시오.
 
-Microsoft 인증 설정 지침은 https://github.com/djl987645/MineSquareLauncher/blob/master/docs/MicrosoftAuth.md에서 확인하세요.
+Microsoft 인증 설정 지침은 https://github.com/dscalzi/HeliosLauncher/blob/master/docs/MicrosoftAuth.md에서 확인하세요.
 
 ---
 
