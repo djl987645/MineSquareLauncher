@@ -2,6 +2,8 @@ name: Build
 
 on:
   push:
+    tags:
+      - 'v*'
 
 jobs:
   release:
@@ -46,3 +48,25 @@ jobs:
             dist/latest*.yml
             dist/MineSquare Launcher-setup-*.exe
             dist/MineSquare Launcher-setup-*.dmg
+            
+      - name: Add artifacts to release
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const releaseId = context.payload.release.id;
+            const artifacts = await github.rest.actions.listArtifactsForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              per_page: 100
+            });
+            const artifact = artifacts.data.artifacts.find(a => a.name === 'MineSquare_Launcher');
+            if (artifact) {
+              await github.rest.repos.uploadReleaseAsset({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                release_id: releaseId,
+                name: artifact.name,
+                url: artifact.url
+              });
+            }
