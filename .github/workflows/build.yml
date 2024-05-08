@@ -1,12 +1,10 @@
-name: Build and Create Release Draft
+name: Build
 
 on:
- push:
-    tags:
-     - 'v*'
+  push:
 
 jobs:
- build:
+  release:
     runs-on: ${{ matrix.os }}
 
     permissions:
@@ -39,52 +37,9 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run dist
         shell: bash
-
+        
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
           name: MineSquare_Launcher
-          path: |
-            dist/latest*.yml
-            dist/MineSquare Launcher-setup-*.exe
-            dist/MineSquare Launcher-setup-*.dmg
-
- create-release-draft:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Create Release Draft
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          draft: true
-          prerelease: false
-
-      - name: Add artifacts to release
-        uses: actions/github-script@v5
-        with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
-          script: |
-            const releaseId = context.payload.release.id;
-            const artifacts = await github.rest.actions.listArtifactsForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              per_page: 100
-            });
-            const artifact = artifacts.data.artifacts.find(a => a.name === 'MineSquare_Launcher');
-            if (artifact) {
-              await github.rest.repos.uploadReleaseAsset({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                release_id: releaseId,
-                name: artifact.name,
-                url: artifact.url
-              });
-            }
+          path: dist/
