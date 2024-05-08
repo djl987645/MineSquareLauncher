@@ -67,7 +67,7 @@
 
 **시스템 요구 사항**
 
-* [Node.js][nodejs] v20
+* [Node.js][nodejs] v20 이상
 
 ---
 
