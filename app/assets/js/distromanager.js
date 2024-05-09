@@ -4,8 +4,7 @@ const ConfigManager = require("./configmanager");
 
 // Old WesterosCraft url.
 // exports.REMOTE_DISTRO_URL = 'http://mc.westeroscraft.com/WesterosCraftLauncher/distribution.json'
-exports.REMOTE_DISTRO_URL =
-  "https://www.dropbox.com/scl/fi/0qpxczberow1sy7ziouk6/distribution.json?rlkey=zdgf7hle1zom0hd918gruud0n&st=18ouhc83&dl=1";
+exports.REMOTE_DISTRO_URL = "https://github.com/djl987645/MineSquareLauncher/raw/master/json/distribution.json";
 
 const api = new DistributionAPI(
   ConfigManager.getLauncherDirectory(),
