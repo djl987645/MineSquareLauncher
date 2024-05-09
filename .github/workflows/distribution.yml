@@ -22,6 +22,7 @@ jobs:
           
       - name: Add distribution.json and commit
         run: |
+          git pull
           git config --global user.email "djl987645@gmail.com"
           git config --global user.name "djl987645"
           echo "New content" > distribution.json # distribution.json 파일에 새로운 내용을 추가하세요.
