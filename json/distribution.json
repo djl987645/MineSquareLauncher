@@ -13,7 +13,7 @@
       "description": "경기대학교 마인크래프트 서버, MineSquare",
       "icon": "https://raw.githubusercontent.com/djl987645/MineSquareLauncher/master/image/server-icon.png",
       "version": "1.0.0",
-      "address": "minesquare.kr:25565",
+      "address": "",
       "minecraftVersion": "1.20.4",
       "discord": {
         "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
