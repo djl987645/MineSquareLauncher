@@ -15,23 +15,23 @@
 
 ## 기능
 
-* 🔒 전체 계정 관리.
-  * 다중 계정 추가 및 쉽게 전환하기.
-  * Microsoft (OAuth 2.0) + Mojang (Yggdrasil) 인증 완전 지원.
-  * 자격 증명은 저장되지 않고 Mojang에 직접 전송됩니다.
-* 📂 효율적인 자산 관리.
-  * 업데이트를 발표하는 즉시 클라이언트 업데이트를 받으세요.
-  * 파일은 시작 전에 검증됩니다. 손상되거나 잘못된 파일은 다시 다운로드됩니다.
-* ☕ **자동 자바 검증.**
-  * 호환되지 않는 자바 버전이 설치되어 있으면, 우리가 올바른 버전을 설치해 드립니다.
-  * 런처를 실행하기 위해 자바가 설치되어 있을 필요는 없습니다.
-* 📰 기본적으로 런처에 통합된 뉴스 피드.
-* ⚙️ 직관적인 설정 관리, 자바 제어판 포함.
-* 모든 서버 지원.
-  * 서버 구성을 쉽게 전환합니다.
-  * 선택된 서버의 플레이어 수를 봅니다.
-* 자동 업데이트. 맞습니다, 런처는 스스로 업데이트합니다.
-*  Mojang 서비스의 상태를 확인합니다.
+- 🔒 전체 계정 관리.
+  - 다중 계정 추가 및 쉽게 전환하기.
+  - Microsoft (OAuth 2.0) + Mojang (Yggdrasil) 인증 완전 지원.
+  - 자격 증명은 저장되지 않고 Mojang에 직접 전송됩니다.
+- 📂 효율적인 자산 관리.
+  - 업데이트를 발표하는 즉시 클라이언트 업데이트를 받으세요.
+  - 파일은 시작 전에 검증됩니다. 손상되거나 잘못된 파일은 다시 다운로드됩니다.
+- ☕ **자동 자바 검증.**
+  - 호환되지 않는 자바 버전이 설치되어 있으면, 우리가 올바른 버전을 설치해 드립니다.
+  - 런처를 실행하기 위해 자바가 설치되어 있을 필요는 없습니다.
+- 📰 기본적으로 런처에 통합된 뉴스 피드.
+- ⚙️ 직관적인 설정 관리, 자바 제어판 포함.
+- 모든 서버 지원.
+  - 서버 구성을 쉽게 전환합니다.
+  - 선택된 서버의 플레이어 수를 봅니다.
+- 자동 업데이트. 맞습니다, 런처는 스스로 업데이트합니다.
+- Mojang 서비스의 상태를 확인합니다.
 
 이것뿐만이 아닌 다양한 기능들을 직접 확인하세요!
 
@@ -39,25 +39,21 @@
 
 ## 다운로드
 
- [GitHub Releases](https://github.com/djl987645/MineSquareLauncher/releases)에서 다운로드 받을 수 있습니다.
-
+[GitHub Releases](https://github.com/djl987645/MineSquareLauncher/releases)에서 다운로드 받을 수 있습니다.
 
 #### 현재 최신 릴리즈
 
 [![](https://img.shields.io/github/release/djl987645/MineSquareLauncher.svg?style=flat-square)](https://github.com/djl987645/MineSquareLauncher/releases/latest)
 
-
 **사용 가능한 플랫폼**
 
 [Releases](https://github.com/djl987645/MineSquareLauncher/releases) 탭에서 다운받으실 경우, 본인의 시스템에 맞는 설치 파일을 다운로드해 주세요.
 
-| Platform | File |
-| -------- | ---- |
-| Windows x64 | `MineSquare-Launcher-setup-VERSION.exe` |
-| macOS x64 | `MineSquare-Launcher-setup-VERSION-x64.dmg` |
-| macOS arm64 | `MineSquare-Launcher-setup-VERSION-arm64.dmg` |
-| Linux x64 | `MineSquare-Launcher-setup-VERSION.AppImage` |
-
+| Platform                 | File                                          |
+| ------------------------ | --------------------------------------------- |
+| Windows x64              | `MineSquare-Launcher-setup-VERSION.exe`       |
+| macOS x64(구형)          | `MineSquare-Launcher-setup-VERSION-x64.dmg`   |
+| macOS arm64(M1 CPU 부터) | `MineSquare-Launcher-setup-VERSION-arm64.dmg` |
 
 ## 개발
 
@@ -67,7 +63,7 @@
 
 **시스템 요구 사항**
 
-* [Node.js][nodejs] v20 이상
+- [Node.js][nodejs] v20 이상
 
 ---
 
@@ -99,7 +95,7 @@
 
 특정 플랫폼용 빌드.
 
-| 플랫폼       | 명령어                |
+| 플랫폼      | 명령어               |
 | ----------- | -------------------- |
 | Windows x64 | `npm run dist:win`   |
 | macOS       | `npm run dist:mac`   |
@@ -170,23 +166,20 @@ Microsoft 인증 설정 지침은 [해당 링크](https://github.com/dscalzi/Hel
 
 ## 자료
 
-* [Wiki][wiki]
-* [Nebula (Create Distribution.json)][nebula]
-* [v2 Rewrite Branch (Inactive)][v2branch]
+- [Wiki][wiki]
+- [Nebula (Create Distribution.json)][nebula]
+- [v2 Rewrite Branch (Inactive)][v2branch]
 
 개발자에게 연락하는 가장 좋은 방법은 Discord입니다.
 
-[![discord](https://discordapp.com/api/guilds/211524927831015424/embed.png?style=banner3)][discord]
----
+## [![discord](https://discordapp.com/api/guilds/211524927831015424/embed.png?style=banner3)][discord]
 
-
-
-[nodejs]: https://nodejs.org/en/ 'Node.js'
-[vscode]: https://code.visualstudio.com/ 'Visual Studio Code'
-[mainprocess]: https://electronjs.org/docs/tutorial/application-architecture#main-and-renderer-processes 'Main Process'
-[rendererprocess]: https://electronjs.org/docs/tutorial/application-architecture#main-and-renderer-processes 'Renderer Process'
-[chromedebugger]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome 'Debugger for Chrome'
-[discord]: https://discord.gg/zNWUXdt 'Discord'
-[wiki]: https://github.com/dscalzi/HeliosLauncher/wiki 'wiki'
-[nebula]: https://github.com/dscalzi/Nebula 'dscalzi/Nebula'
-[v2branch]: https://github.com/dscalzi/HeliosLauncher/tree/ts-refactor 'v2 branch'
+[nodejs]: https://nodejs.org/en/ "Node.js"
+[vscode]: https://code.visualstudio.com/ "Visual Studio Code"
+[mainprocess]: https://electronjs.org/docs/tutorial/application-architecture#main-and-renderer-processes "Main Process"
+[rendererprocess]: https://electronjs.org/docs/tutorial/application-architecture#main-and-renderer-processes "Renderer Process"
+[chromedebugger]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome "Debugger for Chrome"
+[discord]: https://discord.gg/zNWUXdt "Discord"
+[wiki]: https://github.com/dscalzi/HeliosLauncher/wiki "wiki"
+[nebula]: https://github.com/dscalzi/Nebula "dscalzi/Nebula"
+[v2branch]: https://github.com/dscalzi/HeliosLauncher/tree/ts-refactor "v2 branch"
