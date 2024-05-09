@@ -3215,12 +3215,13 @@ input:checked + .toggleSwitchSlider:before {
 #server_status_wrapper {
   font-size: 15px;
   margin-left: 0px;
-  display: inline-block;
+  display: inline-grid;
   width: 75px;
 }
 
 /* Span which displays the player count of the selected server. */
 #player_count {
+  width: max-content;
   color: #949494;
   font-size: 20px;
   font-weight: 1000;
