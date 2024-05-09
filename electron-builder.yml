@@ -1,0 +1,50 @@
+appId: "minesquarelauncher"
+productName: "MineSquare Launcher"
+artifactName: "${productName}-setup-${version}.${ext}"
+
+copyright: "Copyright © 2018-2024 Daniel Scalzi modified by djl987645"
+
+asar: true
+compression: "maximum"
+
+files:
+  - "!{dist,.gitignore,.vscode,docs,dev-app-update.yml,.nvmrc,.eslintrc.json}"
+
+extraResources:
+  - "libraries"
+
+# Windows Configuration
+win:
+  target:
+    - target: "nsis"
+      arch: "x64"
+
+# Windows Installer Configuration
+nsis:
+  oneClick: false
+  perMachine: false
+  allowElevation: true
+  allowToChangeInstallationDirectory: true
+
+# macOS Configuration
+mac:
+  target:
+    - target: "dmg"
+      arch:
+        - "x64"
+        - "arm64"
+  artifactName: "${productName}-setup-${version}-${arch}.${ext}"
+  category: "public.app-category.games"
+
+# Linux Configuration
+linux:
+  target: "AppImage"
+  maintainer: "djl987645"
+  vendor: "djl987645"
+  synopsis: "MineSquare 런처"
+  description: "MineSquare Launcher는 여러 편의성, 최적화 모드와 함께 Minesquare에 접속할 수 있는 런처입니다."
+  category: "Game"
+
+directories:
+  buildResources: "build"
+  output: "dist"
