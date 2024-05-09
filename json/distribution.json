@@ -10,7 +10,7 @@
     {
       "id": "MineSquare-1.20.4",
       "name": "MineSquare",
-      "description": "경기대학교 마인크래프트 서버, MineSquare 입니다",
+      "description": "경기대학교 마인크래프트 서버, MineSquare",
       "icon": "https://raw.githubusercontent.com/djl987645/MineSquareLauncher/master/image/server-icon.png",
       "version": "1.0.0",
       "address": "minesquare.kr:25565",
