@@ -3,7 +3,7 @@ name: Commit distribution.json
 on:
   push:
     paths:
-      - 'json/distributoin.json'
+      - 'json/distribution.json'
 
 jobs:
   commit-distribution-json:
