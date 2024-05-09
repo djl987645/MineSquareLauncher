@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "rss": "",
+  "version": "0.0.5",
+  "rss": "https://github.com/djl987645/MineSquareLauncher/releases.atom",
   "discord": {
     "clientId": "<FILL IN OR REMOVE DISCORD OBJECT>",
     "smallImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
