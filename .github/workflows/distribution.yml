@@ -19,7 +19,10 @@ jobs:
           git rm --cached json/distribution.json
           git commit -m "Remove cached distribution.json"
           git push origin master # master 브랜치로 푸시합니다.
-          
+
+      - name: Sleep for 10 seconds
+        run: sleep 10
+        
       - name: Add distribution.json and commit
         run: |
           git pull
