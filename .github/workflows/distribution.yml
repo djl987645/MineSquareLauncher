@@ -1,0 +1,26 @@
+name: Commit distribution.json
+
+on:
+  push:
+    branches:
+      - master # master 브랜치에서 푸쉬할 때 워크플로우를 트리거합니다.
+
+jobs:
+  commit-distribution-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Delete cached distribution.json
+        run: |
+          git rm --cached distribution.json
+          git commit -m "Remove cached distribution.json"
+          git push origin master # master 브랜치로 푸시합니다.
+
+      - name: Add distribution.json and commit
+        run: |
+          echo "New content" > distribution.json # distribution.json 파일에 새로운 내용을 추가하세요.
+          git add distribution.json
+          git commit -m "Add new content to distribution.json"
+          git push origin master # master 브랜치로 푸시합니다.
