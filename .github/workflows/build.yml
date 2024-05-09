@@ -8,14 +8,11 @@ on:
 jobs:
   release:
     runs-on: ${{ matrix.os }}
-
     permissions:
       contents: write
-
     strategy:
       matrix:
         os: [macos-latest, windows-latest]
-
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v4
@@ -40,11 +37,20 @@ jobs:
         run: npm run dist
         shell: bash
 
-      - name: Upload artifact
+      - name: Upload macOS Artifact
+        if: matrix.os == 'macos-latest'
         uses: actions/upload-artifact@v4
         with:
-          name: MineSquare_Launcher
+          name: MineSquare_Launcher_macOS
           path: |
-            dist/latest*.yml
-            dist/MineSquare Launcher-setup-*.exe
+            dist/latest-mac.yml
             dist/MineSquare Launcher-setup-*.dmg
+
+      - name: Upload Windows Artifact
+        if: matrix.os == 'windows-latest'
+        uses: actions/upload-artifact@v4
+        with:
+          name: MineSquare_Launcher_Windows
+          path: |
+            dist/latest.yml
+            dist/MineSquare Launcher-setup-*.exe
