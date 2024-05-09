@@ -1,5 +1,5 @@
 {
-  "version": "0.0.5",
+  "version": "0.0.6",
   "rss": "https://github.com/djl987645/MineSquareLauncher/releases.atom",
   "discord": {
     "clientId": "<FILL IN OR REMOVE DISCORD OBJECT>",
@@ -16,9 +16,9 @@
       "address": "minesquare.kr:25565",
       "minecraftVersion": "1.20.4",
       "discord": {
-        "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
-        "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
-        "largeImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+        "shortId": "마인스퀘어",
+        "largeImageText": "마인스퀘어 플레이중",
+        "largeImageKey": "https://i.imgur.com/uN7dnqd.jpeg"
       },
       "mainServer": true,
       "autoconnect": true,
