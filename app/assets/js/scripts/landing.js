@@ -1075,7 +1075,6 @@ async function loadNews() {
 
  
   const promise = new Promise((resolve, reject) => {
-    //FIXME 뉴스 구현 할때 필요시 newsFeed를 하드 코딩 할것
     const newsFeed = distroData.rawDistribution.rss;
     const newsHost = new URL(newsFeed).origin + "/";
     $.ajax({
