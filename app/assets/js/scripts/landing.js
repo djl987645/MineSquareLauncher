@@ -717,8 +717,6 @@ async function dlAsync(login = true) {
  * News Loading Functions
  */
 
-// FIXME 뉴스 기능 수정
-// 디스코드에서 특정 포스트를 스크랩하고 각 항목에 맞게 변형 할것
 
 // DOM Cache
 const newsContent = document.getElementById("newsContent");
