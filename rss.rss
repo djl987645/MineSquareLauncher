@@ -21,15 +21,22 @@
       <category
         domain="https://discord.com/channels/1217041766847348776/1237974346123710526/1237974346123710526"><![CDATA[News]]></category>
       <dc:creator>비유</dc:creator>
-      <content:encoded><![CDATA[<div id="message-content-1237974346123710526" class="markup_a7e664 messageContent_abea64"><span>본 패치노트부터 해당 날짜에 추가 패치가 있을 시 추가 게시물이 아닌 기존 게시물에 제목만 변경 날짜를 기입합니다</span><span>.
-</span><span class="roleMention_d441cd wrapper__53064" tabindex="-1" role="button"><span>@everyone</span></span><span> </span><span>
+      <content:encoded><![CDATA[
+      <h1>패치 노트</h1>
 
-</span><span>[농사</span><span>]
-</span><ul><li><span><span>배추</span><span>, 양배추</span><span>, 파인애플</span><span>, 옥수수는 이제 작업대에 올리면 해당 씨앗 1개가 아닌 2개를 제작할 수 있습니다</span><span>.</span></span></li></ul><span>
-</span><span>[기타</span><span>]
-</span><ul><li><span><span>임시 씨앗 상점이 </span><span>2</span><span>0</span><span>2</span><span>4</span><span>.</span><span>5</span><span>.</span><span>1</span><span>0</span><span>. 이후에 삭제됩니다</span><span>.</span></span></li><li><span><span>건축자재상점이 6강의동 1층에 추가됩니다</span><span>.
-화강암</span><span>, 섬록암</span><span>, 안산암</span><span>, 벽돌</span><span>, 진흙</span><span>, 붉은 사암</span><span>, 프리즈머린</span><span>, 응회암</span><span>, 모든 종류의 양털</span><span>, 모든 종류의 테라코타</span><span>, 모든 종류의 콘크리트 가루를 구매할 수 있습니다</span><span>.
-가격은 32개당 15000원입니다</span><span>.</span></span></li></ul> <span class="timestamp_c79dd2"><time aria-label="수정됨 2024년 5월 9일 오후 6:27" datetime="2024-05-09T09:27:49.930Z"><span class="edited_b20dd9">(수정됨)</span></time></span></div>]]></content:encoded>
+<div class="patch-note">
+    <h3>[농사]</h3>
+    <p>배추, 양배추, 파인애플, 옥수수는 이제 작업대에 올리면 해당 씨앗 1개가 아닌 2개를 제작할 수 있습니다.</p>
+</div>
+
+<div class="patch-note">
+    <h3>[기타]</h3>
+    <p>임시 씨앗 상점이 2024.5.10. 이후에 삭제됩니다.<br>
+    건축자재상점이 6강의동 1층에 추가됩니다.<br>
+    화강암, 섬록암, 안산암, 벽돌, 진흙, 붉은 사암, 프리즈머린, 응회암, 모든 종류의 양털, 모든 종류의 테라코타, 모든 종류의 콘크리트 가루를 구매할 수 있습니다.<br>
+    가격은 32개당 15000원입니다.</p>
+</div>
+]]></content:encoded>
       <slash:comments>0</slash:comments>
     </item>
   </channel>
