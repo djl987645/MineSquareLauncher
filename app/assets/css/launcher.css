@@ -3055,6 +3055,7 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Container object which wraps an icon to ensure fluid transitions. */
 .mediaContainer {
+  padding:12;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3072,11 +3073,10 @@ input:checked + .toggleSwitchSlider:before {
 /* Social media icon shared styles. */
 .mediaSVG {
   fill: #ffffff;
-  height: 12px;
+  height: 30px;
   transition: 0.25s ease;
   cursor: pointer;
-  height: 12px;
-  width: 25px;
+  width: 50px;
 }
 .mediaSVG:hover,
 .mediaURL:focus .mediaSVG,
@@ -3106,7 +3106,7 @@ input:checked + .toggleSwitchSlider:before {
 /* Settings icon colors. */
 #settingsSVG {
   stroke: #ffffff;
-  height: 15px;
+  height: 30px;
 }
 .mediaButton:hover #settingsSVG,
 .mediaButton:focus #settingsSVG,
@@ -3167,12 +3167,12 @@ input:checked + .toggleSwitchSlider:before {
   fill: url("#instaFill");
 }
 
-/* Youtube icon colors. */
-#youtubeSVG:hover,
-#youtubeURL:focus #youtubeSVG {
+/* map icon colors. */
+#mapSVG:hover,
+#mapURL:focus #mapSVG {
   fill: #f00;
 }
-#youtubeSVG:active {
+#mapSVG:active {
   fill: #ea0202;
 }
 
