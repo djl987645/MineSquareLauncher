@@ -2,9 +2,9 @@
   "version": "0.0.6",
   "rss": "https://github.com/djl987645/MineSquareLauncher/releases.atom",
   "discord": {
-    "clientId": "<FILL IN OR REMOVE DISCORD OBJECT>",
-    "smallImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
-    "smallImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+    "clientId": "1238436046631469068",
+    "smallImageText": "마인스퀘어 플레이 중",
+    "smallImageKey": "https://i.imgur.com/uN7dnqd.jpeg"
   },
   "servers": [
     {
@@ -17,7 +17,7 @@
       "minecraftVersion": "1.20.4",
       "discord": {
         "shortId": "마인스퀘어",
-        "largeImageText": "마인스퀘어 플레이중",
+        "largeImageText": "마인스퀘어 플레이 중",
         "largeImageKey": "https://i.imgur.com/uN7dnqd.jpeg"
       },
       "mainServer": true,
