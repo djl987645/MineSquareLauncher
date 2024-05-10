@@ -1073,7 +1073,6 @@ async function loadNews() {
     return null;
   }
 
- 
   const promise = new Promise((resolve, reject) => {
     const newsFeed = distroData.rawDistribution.rss;
     const newsHost = new URL(newsFeed).origin + "/";
@@ -1104,7 +1103,7 @@ async function loadNews() {
           comments = comments + " Comment" + (comments === "1" ? "" : "s");
 
           // Fix relative links in content.
-          let content = el.find("content\\:encoded").text();
+          let content = el.find("content\\:encoded").html();
           let regex = /src="(?!http:\/\/|https:\/\/)(.+?)"/g;
           let matches;
           while ((matches = regex.exec(content))) {
