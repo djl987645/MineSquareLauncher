@@ -717,6 +717,9 @@ async function dlAsync(login = true) {
  * News Loading Functions
  */
 
+// FIXME 뉴스 기능 수정
+// 디스코드에서 특정 포스트를 스크랩하고 각 항목에 맞게 변형 할것
+
 // DOM Cache
 const newsContent = document.getElementById("newsContent");
 const newsArticleTitle = document.getElementById("newsArticleTitle");
@@ -1070,7 +1073,9 @@ async function loadNews() {
     return null;
   }
 
+ 
   const promise = new Promise((resolve, reject) => {
+    //FIXME 뉴스 구현 할때 필요시 newsFeed를 하드 코딩 할것
     const newsFeed = distroData.rawDistribution.rss;
     const newsHost = new URL(newsFeed).origin + "/";
     $.ajax({
