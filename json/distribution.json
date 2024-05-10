@@ -1,6 +1,6 @@
 {
   "version": "0.0.6",
-  "rss": "https://raw.githubusercontent.com/djl987645/MineSquareLauncher/master/rss",
+  "rss": "https://raw.githubusercontent.com/djl987645/MineSquareLauncher/master/rss.rss",
   "discord": {
     "clientId": "1238436046631469068",
     "smallImageText": "마인스퀘어 플레이 중",
