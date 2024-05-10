@@ -21,15 +21,21 @@
       <category
         domain="https://discord.com/channels/1217041766847348776/1237974346123710526"><![CDATA[News]]></category>
       <dc:creator>비유</dc:creator>
-      <content:encoded><![CDATA[<div class="bbWrapper">Howdy everyone!<br />
-<br />
-Hope your spring is going great so far. Behind the scenes, I've been working on improving our project management (along with lots of other exciting things like a plot system, new WorldMachine terrain, and more!). To further those plans, <b>I am looking to gather some feedback, suggestions, ideas, or comments about the operation of the server.</b>  I've made a feedback form where I can solicit some of these responses and ideally influence the future of the project.<br />
-<br />
-I'm looking for general feedback on what you think is working for the project, what you believe isn't working, and any ideas to improve. I am open to any other thoughts from both current and former community members, outside observers and anyone else. <b>You can remain anonymous!  The form is only viewable by me, not the mods. </b> There is a username field so you can identify yourself, but only if you wish.  Alternatively, if you wish to directly DM me on Discord, please do, always down to chat! <br />
-<br />
-The form is here: <a href="https://forms.gle/WoBKjs5cxJ2ZjebT6" target="_blank" class="link link--external" rel="noopener">https://forms.gle/WoBKjs5cxJ2ZjebT6</a> <br />
-<br />
-Thank you everyone, looking forward to seeing the feedback</div>]]></content:encoded>
+      <content:encoded>[농사]<br />
+      배추, 양배추, 파인애플, 옥수수는 이제 작업대에 올리면 해당 씨앗 1개가 아닌 2개를 제작할 수 있습니다.
+  <br />
+  <br />
+  [기타]
+  <br />
+  임시 씨앗 상점이 2024.5.10. 이후에 삭제됩니다.
+  <br />
+  건축자재상점이 6강의동 1층에 추가됩니다.
+  <br />
+  화강암, 섬록암, 안산암, 벽돌, 진흙, 붉은 사암, 프리즈머린, 응회암, 모든 종류의 양털, 모든 종류의 테라코타, 모든 종류의 콘크리트 가루를 구매할 수 있습니다.
+  <br />
+  가격은 32개당 15000원입니다.
+  <br />
+</content:encoded>
       <slash:comments>0</slash:comments>
     </item>
   </channel>
