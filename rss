@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <newsContent></newsContent>
+    <newsArticleTitle>뉴스 제목</newsArticleTitle>
+    <newsArticleDate>2024년 5월 10일</newsArticleDate>
+    <newsArticleAuthor>저자 이름</newsArticleAuthor>
+    <newsArticleComments></newsArticleComments>
+    <newsNavigationStatus></newsNavigationStatus>
+    <newsArticleContentScrollable></newsArticleContentScrollable>
+    <nELoadSpan>로딩 중...</nELoadSpan>
+</root>
