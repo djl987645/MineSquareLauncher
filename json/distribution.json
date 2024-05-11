@@ -229,7 +229,7 @@
           "name": "shader config file",
           "type": "File",
           "artifact": {
-            "url": "https://raw.githubusercontent.com/djl987645/MineSquareLauncher/master/option/optionsshader.txt",
+            "url": "https://raw.githubusercontent.com/djl987645/MineSquareLauncher/master/option/optionsshaders.txt",
             "path": "/"
           }
         }
