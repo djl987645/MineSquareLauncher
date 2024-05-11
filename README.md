@@ -55,6 +55,8 @@
 | macOS x64(구형)          | `MineSquare-Launcher-setup-VERSION-x64.dmg`   |
 | macOS arm64(M1 CPU 부터) | `MineSquare-Launcher-setup-VERSION-arm64.dmg` |
 
+macOS 사용자 분들은 실행이 안될시 터미널에 xattr -cr "/Applications/MinesquareLauncher.app"을 입력해주세요
+
 ## 개발
 
 이 섹션은 기본 개발 환경 설정에 대해 설명합니다.
