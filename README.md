@@ -55,7 +55,10 @@
 | macOS x64(구형)          | `MineSquare-Launcher-setup-VERSION-x64.dmg`   |
 | macOS arm64(M1 CPU 부터) | `MineSquare-Launcher-setup-VERSION-arm64.dmg` |
 
-macOS 사용자 분들은 실행이 안될시 터미널에 xattr -cr "/Applications/MinesquareLauncher.app"을 입력해주세요
+macOS 사용자 분들은 실행이 안될시 터미널에 다음 명령어를 입력해주세요
+```
+xattr -cr "/Applications/MinesquareLauncher.app"
+```
 
 ## 개발
 
