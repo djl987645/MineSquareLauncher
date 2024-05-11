@@ -11,13 +11,14 @@
     <generator>MineSquare Server</generator>
     <link>https://discord.gg/e9DmduXy</link>
     <atom:link rel="self" type="application/rss+xml"
-      href="https://forum.westeroscraft.com/forum/news.2/index.rss" />
+      href="https://raw.githubusercontent.com/djl987645/MineSquareLauncher/master/rss.rss" />
+
     <item>
       <title>마인스퀘어 2024.5.9. 패치노트</title>
       <pubDate>Thu, 09 May 2024 12:48:00 +0900</pubDate>
       <link>https://discord.com/channels/1217041766847348776/1237974346123710526</link>
-      <guid isPermaLink="false">4027</guid>
-      <author>invalid@example.com (비유)</author>
+      <guid isPermaLink="false">1</guid>
+      <author>비유</author>
       <category
         domain="https://discord.com/channels/1217041766847348776/1237974346123710526"><![CDATA[News]]></category>
       <dc:creator>비유</dc:creator>
@@ -42,7 +43,23 @@
       </content:encoded>
       <slash:comments>0</slash:comments>
     </item>
+
   </channel>
 </rss>
 <!-- FIXME 추후 디스코드 봇 구현 필요 -->
 <!-- 디스코드 서버의 특정 포스트를 크롤링 하여 rss 생성하는 로직 필요 -->
+
+<!-- rss 구성 요소
+<item>
+  <title>제목</title>
+  <pubDate>작성 시간</pubDate>
+  <link>해당 게시글의 링크</link>
+  <guid isPermaLink="false">게시글 식별자</guid>
+  <author>작성자</author>
+  <category
+    domain="https://discord.com/channels/1217041766847348776/1237974346123710526"><![CDATA[News]]></category>
+  <content:encoded>
+    들어갈 html 태그
+  </content:encoded>
+  <slash:comments>0</slash:comments>
+</item> -->
