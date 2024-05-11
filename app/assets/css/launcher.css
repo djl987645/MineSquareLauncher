@@ -3167,14 +3167,6 @@ input:checked + .toggleSwitchSlider:before {
   fill: url("#instaFill");
 }
 
-/* map icon colors. */
-#mapSVG:hover,
-#mapURL:focus #mapSVG {
-  fill: #f00;
-}
-#mapSVG:active {
-  fill: #ea0202;
-}
 
 /* Discord icon colors. */
 #discordSVG:hover,
