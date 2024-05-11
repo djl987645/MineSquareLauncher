@@ -61,7 +61,11 @@ if (!isDev) {
         loggerAutoUpdater.info("New update available", info.version);
 
         if (process.platform === "darwin") {
-          info.darwindownload = `https://github.com/djl987645/MineSquareLauncher/releases/download/v${info.version}/MinSquare.Launcher-setup-${info.version}${process.arch === "arm64" ? "-arm64" : "-x64"}.dmg`;
+          info.darwindownload = `https://github.com/djl987645/MineSquareLauncher/releases/download/v${
+            info.version
+          }/MineSquare-Launcher-setup-${info.version}${
+            process.arch === "arm64" ? "-arm64" : "-x64"
+          }.dmg`;
           showUpdateUI(info);
         }
 
