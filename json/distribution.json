@@ -211,9 +211,26 @@
           "name": "Journeymap config file",
           "type": "File",
           "artifact": {
-            "size": 409956,
             "url": "https://www.dropbox.com/scl/fi/eh41wn5rfp0gspzl38129/journeymap.core.config?rlkey=8wuxfa58epsfpmp2n4pfvulcz&st=7n44o411&dl=1",
             "path": "journeymap/config/5.9/journeymap.core.config"
+          }
+        },
+        {
+          "id": "minesquare config file",
+          "name": "minesquare config file",
+          "type": "File",
+          "artifact": {
+            "url": "https://raw.githubusercontent.com/djl987645/MineSquareLauncher/master/option/options.txt",
+            "path": "/"
+          }
+        },
+        {
+          "id": "shader config file",
+          "name": "shader config file",
+          "type": "File",
+          "artifact": {
+            "url": "https://raw.githubusercontent.com/djl987645/MineSquareLauncher/master/option/optionsshader.txt",
+            "path": "/"
           }
         }
       ]
