@@ -220,7 +220,7 @@
           "name": "minesquare config file",
           "type": "File",
           "artifact": {
-            "url": "https://www.dropbox.com/scl/fi/9vvcrm8kuecmwpha3jx45/options.txt?rlkey=yy26f3dfzrovzzak61yenjka5&st=7r2ldk3t&dl=1",
+            "url": "https://raw.githubusercontent.com/djl987645/MineSquareLauncher/master/option/options.txt",
             "path": "options.txt"
           }
         },
@@ -229,7 +229,7 @@
           "name": "shader config file",
           "type": "File",
           "artifact": {
-            "url": "https://www.dropbox.com/scl/fi/8js7z8l0i3aljufnrd163/optionsshaders.txt?rlkey=36utc0nzbdppc2w6n0irfg38t&st=dg8cfddc&dl=1",
+            "url": "https://raw.githubusercontent.com/djl987645/MineSquareLauncher/master/option/optionsshaders.txt",
             "path": "optionsshaders.txt"
           }
         }
