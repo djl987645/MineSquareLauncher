@@ -3055,7 +3055,7 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Container object which wraps an icon to ensure fluid transitions. */
 .mediaContainer {
-  padding:12;
+  padding: 12;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3064,6 +3064,8 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Divider bar between the external and internal icons. */
 .mediaDivider {
+  position: relative;
+  left: 1px;
   height: 1px;
   width: 14px;
   background: rgb(255, 255, 255);
@@ -3166,7 +3168,6 @@ input:checked + .toggleSwitchSlider:before {
 #instagramSVG:active {
   fill: url("#instaFill");
 }
-
 
 /* Discord icon colors. */
 #discordSVG:hover,
