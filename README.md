@@ -12,6 +12,7 @@
 
 ![Screenshot 1](https://i.imgur.com/txtPBF3.png)
 ![Screenshot 2](https://i.imgur.com/n0Y5bSw.png)
+[![Screenshot 3](https://i.imgur.com/sB1P1gh.png)
 
 ## 기능
 
