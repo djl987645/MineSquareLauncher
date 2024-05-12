@@ -6,13 +6,40 @@
   <channel>
     <title>뉴스</title>
     <description>패치 노트</description>
-    <pubDate>Thu, 09 May 2024 12:48:00 +0900</pubDate>
-    <lastBuildDate>Thu, 09 May 2024 12:48:00 +0900</lastBuildDate>
+    <pubDate>Sun, 12 May 2024 03:19:00 +0900</pubDate>
+    <lastBuildDate>Thu,
+      09 May 2024 12:48:00 +0900</lastBuildDate>
     <generator>MineSquare Server</generator>
-    <link>https://discord.gg/e9DmduXy</link>
+    <link>
+      https://discord.gg/e9DmduXy</link>
     <atom:link rel="self" type="application/rss+xml"
       href="https://raw.githubusercontent.com/djl987645/MineSquareLauncher/master/rss.rss" />
 
+    <item>
+      <title>마인스퀘어 2024.5.12. 패치노트</title>
+      <pubDate>Sun, 12 May 2024 03:19:00 +0900</pubDate>
+      <link>해당 게시글의 링크</link>
+      <guid isPermaLink="false">2</guid>
+      <author>비유</author>
+      <category
+        domain="https://discord.com/channels/1217041766847348776/1237974346123710526"><![CDATA[News]]></category>
+      <content:encoded>
+        <div class="patch-note">
+          <h3>[RPG]</h3> RPG 콘텐츠가 추가됩니다.<br /> 카롤레아 마을이 추가됩니다.<br /> 카롤레아 메인 퀘스트가 추가됩니다.<br /> 카롤레아
+          메인 퀘스트를 진행하기 위해선 반드시 튜토리얼 퀘스트를 클리어해야합니다.<br /> 카롤레아 사냥터가 추가됩니다.<br /> 일반 슬라임과 트리플 슬라임이
+          추가됩니다.<br /> 새로운 아이템 1단계 강화의 휘석이 추가됩니다.<br /> 1단계 강화의 휘석은 무기를 제작할 때 사용합니다.<br /> 새로운 무기
+          모험가 검이 추가됩니다.<br /> 모험가 검은 1만원과 1단계 강화의 휘석 5개로 제작할 수 있습니다.<br />
+        </div>
+        <div class="patch-note">
+          <h3>[기타]</h3> 거래소가 추가됩니다. /거래소 명령어로 이용할 수 있습니다./거래소 도움말 명령어로 관련 기능을 찾아볼 수 있습니다.<br /> 판매자는
+          판매 금액의 10% 수수료가 발생합니다.<br />
+        </div>
+        <img
+          src="https://cdn.discordapp.com/attachments/1238918461355196530/1238918461741334609/image.png?ex=6641b0fb&is=66405f7b&hm=f18e6c0da9cc6ef5392ac1bbc779357e0f18c27d5877e6d283f2ba8ead4fce10&"
+          alt="Discord Image"></img>
+      </content:encoded>
+      <slash:comments>0</slash:comments>
+    </item>
     <item>
       <title>마인스퀘어 2024.5.9. 패치노트</title>
       <pubDate>Thu, 09 May 2024 12:48:00 +0900</pubDate>
@@ -44,6 +71,7 @@
       <slash:comments>0</slash:comments>
     </item>
 
+
   </channel>
 </rss>
 <!-- FIXME 추후 디스코드 봇 구현 필요 -->
@@ -57,7 +85,7 @@
   <guid isPermaLink="false">게시글 식별자</guid>
   <author>작성자</author>
   <category
-    domain="https://discord.com/channels/1217041766847348776/1237974346123710526"><![CDATA[News]]></category>
+domain="https://discord.com/channels/1217041766847348776/1237974346123710526"><![CDATA[News]]></category>
   <content:encoded>
     들어갈 html 태그
   </content:encoded>
