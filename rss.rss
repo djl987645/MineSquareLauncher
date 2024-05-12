@@ -20,9 +20,10 @@
       <pubDate>Sun, 12 May 2024 03:19:00 +0900</pubDate>
       <link>해당 게시글의 링크</link>
       <guid isPermaLink="false">2</guid>
-      <author>비유</author>
+
       <category
         domain="https://discord.com/channels/1217041766847348776/1237974346123710526"><![CDATA[News]]></category>
+      <dc:creator>비유</dc:creator>
       <content:encoded>
         <div class="patch-note">
           <h3>[RPG]</h3> RPG 콘텐츠가 추가됩니다.<br /> 카롤레아 마을이 추가됩니다.<br /> 카롤레아 메인 퀘스트가 추가됩니다.<br /> 카롤레아
@@ -40,12 +41,12 @@
       </content:encoded>
       <slash:comments>0</slash:comments>
     </item>
+
     <item>
       <title>마인스퀘어 2024.5.9. 패치노트</title>
       <pubDate>Thu, 09 May 2024 12:48:00 +0900</pubDate>
       <link>https://discord.com/channels/1217041766847348776/1237974346123710526</link>
       <guid isPermaLink="false">1</guid>
-      <author>비유</author>
       <category
         domain="https://discord.com/channels/1217041766847348776/1237974346123710526"><![CDATA[News]]></category>
       <dc:creator>비유</dc:creator>
@@ -90,4 +91,6 @@ domain="https://discord.com/channels/1217041766847348776/1237974346123710526"><!
     들어갈 html 태그
   </content:encoded>
   <slash:comments>0</slash:comments>
-</item> -->
+</item> 
+<!-- 각 기사 구분 줄 -->
+-->
