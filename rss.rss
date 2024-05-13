@@ -19,45 +19,13 @@
     <atom:link rel="self" type="application/rss+xml"
       href="https://raw.githubusercontent.com/djl987645/MineSquareLauncher/master/rss.rss" />
 
-    <item>
-      <title>마인스퀘어 2024.5.13. 패치노트</title>
-      <pubDate>Mon, 13 May 2024 02:35:49 +0000</pubDate>
-      <link>https://discord.com/channels/1239328944298135657/1239405716159070259</link>
-      <guid></guid>
-      <dc:creator>djl987645</dc:creator>
-      <content:encoded>
-        <div class="patch-note">
-          <h3>[RPG]</h3>
-          <ul>
-            <li>
-              모험가 검 주문서가 추가됩니다.
-              모험가 검 주문서는 카롤레아 대장간에서 1단계 강화의 휘석 1개와 3000원으로 제작할 수 있습니다.
-              모험가 검은 최대 3번까지 강화할 수 있습니다.
-              &quot;/강화&quot; 명령어가 추가됩니다.
-
-            </li>
-          </ul>
-        </div>
-        <div class="patch-note">
-          <h3>[기타]</h3>
-          <ul>
-            <li>
-              야생 월드와 네더 월드가 초기화되었습니다.</li>
-          </ul>
-        </div>
-        <img
-          src='https://cdn.discordapp.com/attachments/1239405716159070259/1239405716603670609/7352678d3c65d818.png?ex=6642ce05&amp;is=66417c85&amp;hm=ba60274a0579fee8368205563bcf94d668d865102ffda8788fa9cb5d1c09b01e&amp;' />
-      </content:encoded>
-    </item><!--
-    각 기사 구분 줄
-    ========================================================================================================================================================================================================== -->    <!--
-    new-item 스니펫으로 아이템 생성하기-->
-    <item>
-      <title>마인스퀘어 2024.5.13. 패치노트</title>
-      <pubDate>Mon, 13 May 2024 03:32:00 +0900</pubDate>
-      <link>https://discord.com/channels/1217041766847348776/1239284159000608850/1239284159000608850</link>
-      <dc:creator>비유</dc:creator>
-      <content:encoded>
+    <!-- new-item 스니펫으로 아이템 생성하기-->
+     <item>
+        <title>마인스퀘어 2024.5.13. 패치노트</title>
+        <pubDate>Mon, 13 May 2024 03:32:00 +0900</pubDate>
+        <link>https://discord.com/channels/1217041766847348776/1239284159000608850/1239284159000608850</link>
+        <dc:creator>비유</dc:creator>
+        <content:encoded>
         <div class="patch-note">
           <h3>[RPG]</h3>
           <ul>
@@ -74,16 +42,14 @@
             <li>야생 월드와 네더 월드가 초기화되었습니다.</li>
           </ul>
         </div>
-      </content:encoded>
-      <slash:comments>0</slash:comments>
-    </item>
-    <!-- 각 기사 구분 줄
-    ==========================================================================================================================================================================================================-->
+        </content:encoded>
+        <slash:comments>0</slash:comments>
+     </item>
+     <!-- 각 기사 구분 줄 ==========================================================================================================================================================================================================-->
     <item>
       <title>마인스퀘어 2024.5.12. 패치노트</title>
       <pubDate>Sun, 12 May 2024 03:19:00 +0900</pubDate>
-      <link>
-        https://discord.com/channels/1217041766847348776/1233436867844898856/threads/1238918461355196530</link>
+      <link>https://discord.com/channels/1217041766847348776/1233436867844898856/threads/1238918461355196530</link>
       <guid isPermaLink="false">2</guid>
 
       <category
@@ -106,7 +72,7 @@
           </ul>
         </div>
         <div class="patch-note">
-          <h3>[기타]</h3>
+          <h3>[기타]</h3> 
           <ul>
             <li>거래소가 추가됩니다.</li>
             <li>/거래소 명령어로 이용할 수 있습니다.</li>
@@ -115,7 +81,7 @@
           </ul>
         </div>
         <img
-          src="https://cdn.discordapp.com/attachments/1238918461355196530/1238918461741334609/image.png?ex=6641b0fb&amp;is=66405f7b&amp;hm=f18e6c0da9cc6ef5392ac1bbc779357e0f18c27d5877e6d283f2ba8ead4fce10&amp;"
+          src="https://cdn.discordapp.com/attachments/1238918461355196530/1238918461741334609/image.png?ex=6641b0fb&is=66405f7b&hm=f18e6c0da9cc6ef5392ac1bbc779357e0f18c27d5877e6d283f2ba8ead4fce10&"
           alt="Discord Image"></img>
       </content:encoded>
       <slash:comments>0</slash:comments>
@@ -133,24 +99,23 @@
       <content:encoded>
 
         <div class="patch-note">
-          <h3>[농사]</h3>
+          <h3>[농사]</h3> 
           <ul>
             <li>배추, 양배추, 파인애플, 옥수수는 이제 작업대에 올리면 해당 씨앗 1개가 아닌 2개를 제작할 수 있습니다.</li>
           </ul>
-        </div>
+
         <div class="patch-note">
-          <h3>[기타]</h3>
+          <h3>[기타]</h3> 
           <ul>
             <li>임시 씨앗 상점이 2024.5.10. 이후에 삭제됩니다.</li>
             <li>건축자재상점이 6강의동 1층에 추가됩니다.</li>
-            <li>화강암, 섬록암, 안산암, 벽돌, 진흙, 붉은 사암, 프리즈머린, 응회암, 모든 종류의 양털, 모든 종류의 테라코타, 모든 종류의 콘크리트 가루를
-              구매할 수 있습니다.</li>
+            <li>화강암, 섬록암, 안산암, 벽돌, 진흙, 붉은 사암, 프리즈머린, 응회암, 모든 종류의 양털, 모든 종류의 테라코타, 모든 종류의 콘크리트 가루를 구매할 수 있습니다.</li>
             <li>가격은 32개당 15000원입니다.</li>
           </ul>
 
 
-          <img
-            src="https://cdn.discordapp.com/attachments/1237974346123710526/1237974346610245632/image.png?ex=663f9334&amp;is=663e41b4&amp;hm=10b9a07bfbb76de24503a88ee7185c63d3724a7addddcfedb82fba157c41a9ac&amp;"
+        <img
+            src="https://cdn.discordapp.com/attachments/1237974346123710526/1237974346610245632/image.png?ex=663f9334&is=663e41b4&hm=10b9a07bfbb76de24503a88ee7185c63d3724a7addddcfedb82fba157c41a9ac&"
             alt="Discord Image"></img>
 
 
