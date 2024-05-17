@@ -49,10 +49,11 @@
 **사용 가능한 플랫폼**
 
 [Releases](https://github.com/djl987645/MineSquareLauncher/releases) 탭에서 다운받으실 경우, 본인의 시스템에 맞는 설치 파일을 다운로드해 주세요.
+각 플랫폼(OS)에 해당하는 파일 하나만 다운 받으시면 되니 참고해주세요.
 
 | Platform                 | File                                          |
 | ------------------------ | --------------------------------------------- |
-| Windows x64              | `MineSquare-Launcher-setup-VERSION.exe`       |
+| Windows              | `MineSquare-Launcher-setup-VERSION.exe`           |
 | macOS x64(구형)          | `MineSquare-Launcher-setup-VERSION-x64.dmg`   |
 | macOS arm64(M1 CPU 부터) | `MineSquare-Launcher-setup-VERSION-arm64.dmg` |
 
