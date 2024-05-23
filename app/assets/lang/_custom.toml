@@ -8,6 +8,7 @@ mediaGitHubURL = "https://github.com/djl987645/MineSquareLauncher"
 mediaWikiURL = "https://minesquare.notion.site/ac822f0cb16c45249888f01ac44c8113"
 mediaMapURL = "http://minesquare.kr:8123/"
 mediaDiscordURL = "https://discord.gg/XYcy5KJnr4"
+mediaInstagramURL = "https://www.instagram.com/mine_square"
 
 [ejs.settings]
 sourceGithubLink = "https://github.com/djl987645/MineSquareLauncher"
