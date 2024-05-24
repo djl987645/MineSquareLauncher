@@ -10,9 +10,36 @@
 <p align="center">경기대학교 마인크래프트 서버 MineSquare에 접속하기 위한 런처로 </p>
 <p align="center">다양한 최적화, 그래픽 모드를 포함하고 있습니다.</p>
 
+
+## 다운로드
+
+[GitHub Releases](https://github.com/djl987645/MineSquareLauncher/releases)에서 다운로드 받을 수 있습니다.
+
+#### 현재 최신 릴리즈
+
+[![](https://img.shields.io/github/release/djl987645/MineSquareLauncher.svg?style=flat-square)](https://github.com/djl987645/MineSquareLauncher/releases/latest)
+
+**사용 가능한 플랫폼**
+
+[Releases](https://github.com/djl987645/MineSquareLauncher/releases) 탭에서 다운받으실 경우, 본인의 시스템에 맞는 설치 파일을 다운로드해 주세요.<br>
+각 플랫폼(OS)에 해당하는 파일 하나만 다운 받으시면 되니 참고해주세요.
+
+| Platform                 | File                                          |
+| ------------------------ | --------------------------------------------- |
+| Windows              | `MineSquare-Launcher-setup-VERSION.exe`           |
+| macOS x64(구형)          | `MineSquare-Launcher-setup-VERSION-x64.dmg`   |
+| macOS arm64(M1 CPU 부터) | `MineSquare-Launcher-setup-VERSION-arm64.dmg` |
+
+macOS 사용자 분들은 실행이 안될시 터미널에 다음 명령어를 입력해주세요
+```
+xattr -cr "/Applications/MinesquareLauncher.app"
+```
+해당 프로그램이 제대로 설치, 동작하지 않는 다면 사용하고 있는 백신에서 제외설정을 하셔야 할 수 있습니다.
+
+## 미리보기
 ![Screenshot 1](https://i.imgur.com/txtPBF3.png)
 ![Screenshot 2](https://i.imgur.com/n0Y5bSw.png)
-[![Screenshot 3](https://i.imgur.com/sB1P1gh.png)
+![Screenshot 3](https://i.imgur.com/sB1P1gh.png)
 
 ## 기능
 
@@ -38,29 +65,6 @@
 
 #### 프로젝트가 마음에 드신다면 ⭐별로 관심을 표시하세요!
 
-## 다운로드
-
-[GitHub Releases](https://github.com/djl987645/MineSquareLauncher/releases)에서 다운로드 받을 수 있습니다.
-
-#### 현재 최신 릴리즈
-
-[![](https://img.shields.io/github/release/djl987645/MineSquareLauncher.svg?style=flat-square)](https://github.com/djl987645/MineSquareLauncher/releases/latest)
-
-**사용 가능한 플랫폼**
-
-[Releases](https://github.com/djl987645/MineSquareLauncher/releases) 탭에서 다운받으실 경우, 본인의 시스템에 맞는 설치 파일을 다운로드해 주세요.<br>
-각 플랫폼(OS)에 해당하는 파일 하나만 다운 받으시면 되니 참고해주세요.
-
-| Platform                 | File                                          |
-| ------------------------ | --------------------------------------------- |
-| Windows              | `MineSquare-Launcher-setup-VERSION.exe`           |
-| macOS x64(구형)          | `MineSquare-Launcher-setup-VERSION-x64.dmg`   |
-| macOS arm64(M1 CPU 부터) | `MineSquare-Launcher-setup-VERSION-arm64.dmg` |
-
-macOS 사용자 분들은 실행이 안될시 터미널에 다음 명령어를 입력해주세요
-```
-xattr -cr "/Applications/MinesquareLauncher.app"
-```
 
 ## 개발
 
