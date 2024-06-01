@@ -63,26 +63,6 @@ jobs:
       - name: Checkout Release Artifacts
         uses: actions/download-artifact@v4
         with:
-          name: MineSquare_Launcher_macOS
-          path: artifacts/macOS
-
-      - name: Sign macOS DMG
-        if: runner.os == 'Linux'
-        uses: sigstore/gh-action-sigstore-python@v2.1.1
-        with:
-          inputs: artifacts/macOS/MineSquare-Launcher-setup-1.2.0-arm64.dmg artifacts/macOS/MineSquare-Launcher-setup-1.2.0-x64.dmg
-
-      - name: Upload Signed macOS Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: MineSquare_Launcher_macOS
-          path: |
-            artifacts/macOS/latest-mac.yml
-            artifacts/macOS/MineSquare-Launcher-setup*.exe
-
-      - name: Checkout Release Artifacts
-        uses: actions/download-artifact@v4
-        with:
           name: MineSquare_Launcher_Windows
           path: artifacts/Windows
 
@@ -90,7 +70,7 @@ jobs:
         if: runner.os == 'Linux'
         uses: sigstore/gh-action-sigstore-python@v2.1.1
         with:
-          inputs: artifacts/Windows/MineSquare-Launcher-setup-1.2.0.exe
+          inputs: artifacts/Windows/MineSquare-Launcher-setup-*.exe
 
       - name: Upload Signed Windows Artifact
         uses: actions/upload-artifact@v4
@@ -99,3 +79,25 @@ jobs:
           path: |
             artifacts/Windows/latest.yml
             artifacts/Windows/MineSquare-Launcher-setup*.exe
+            
+      - name: Checkout Release Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: MineSquare_Launcher_macOS
+          path: artifacts/macOS
+
+      - name: Sign macOS DMG
+        if: runner.os == 'Linux'
+        uses: sigstore/gh-action-sigstore-python@v2.1.1
+        with:
+          inputs: artifacts/macOS/MineSquare-Launcher-setup-*.dmg
+          
+      - name: Checkout Release Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: MineSquare_Launcher_macOS
+          path: |
+            artifacts/macOS/latest-mac.yml
+            artifacts/macOS/MineSquare-Launcher-setup*.exe
+
+
