@@ -70,7 +70,7 @@ jobs:
         if: runner.os == 'Linux'
         uses: sigstore/gh-action-sigstore-python@v2.1.1
         with:
-          inputs: artifacts/macOS/MineSquare-Launcher-setup*.dmg
+          inputs: artifacts/macOS/MineSquare-Launcher-setup-1.2.0-arm64.dmg artifacts/macOS/MineSquare-Launcher-setup-1.2.0-x64.dmg
 
       - name: Upload Signed macOS Artifact
         uses: actions/upload-artifact@v4
@@ -90,7 +90,7 @@ jobs:
         if: runner.os == 'Linux'
         uses: sigstore/gh-action-sigstore-python@v2.1.1
         with:
-          inputs: artifacts/Windows/MineSquare-Launcher-setup*.exe
+          inputs: artifacts/Windows/MineSquare-Launcher-setup-1.2.0.exe
 
       - name: Upload Signed Windows Artifact
         uses: actions/upload-artifact@v4
