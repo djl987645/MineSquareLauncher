@@ -37,12 +37,20 @@ jobs:
         run: npm run dist
         shell: bash
 
-      # macOS용 dmg 파일에 Sigstore 서명
-      - name: Sign macOS DMG
-        if: matrix.os == 'macos-latest'
+      # macOS용 arm64 dmg 파일에 Sigstore 서명
+      - name: Sign macOS ARM64 DMG
+        if: matrix.os == 'macos-latest' && contains(matrix.os.version, 'arm64')
         uses: sigstore/gh-action-sigstore-python@v2.1.1
         with:
-          inputs: dist/MineSquare-Launcher-setup-*.dmg
+          inputs: dist/MineSquare-Launcher-setup-*-arm64.dmg
+          release-signing-artifacts: true
+      
+      # macOS용 x64 dmg 파일에 Sigstore 서명
+      - name: Sign macOS X64 DMG
+        if: matrix.os == 'macos-latest' &&!contains(matrix.os.version, 'arm64')
+        uses: sigstore/gh-action-sigstore-python@v2.1.1
+        with:
+          inputs: dist/MineSquare-Launcher-setup-*-x64.dmg
           release-signing-artifacts: true
 
       # Windows용 exe 파일에 Sigstore 서명
