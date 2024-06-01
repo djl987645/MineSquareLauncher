@@ -73,7 +73,7 @@ jobs:
           echo "Current directory: $(pwd)"
           sigstore/gh-action-sigstore-python@v2.1.1
           with:
-            inputs: artifacts/Windows/MineSquare-Launcher-setup-*.exe
+            inputs: artifacts/Windows/MineSquare_Launcher_Windows/MineSquare-Launcher-setup-*.exe
 
       - name: Upload Signed Windows Artifact
         uses: actions/upload-artifact@v4
@@ -96,7 +96,7 @@ jobs:
           echo "Current directory: $(pwd)"
           sigstore/gh-action-sigstore-python@v2.1.1
           with:
-            inputs: artifacts/macOS/MineSquare-Launcher-setup-*.dmg
+            inputs: artifacts/macOS/MineSquare_Launcher_macOS/MineSquare-Launcher-setup-*.dmg
           
       - name: Checkout Release Artifacts
         uses: actions/upload-artifact@v4
