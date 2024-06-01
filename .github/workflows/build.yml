@@ -10,7 +10,6 @@ jobs:
     runs-on: ${{ matrix.os }}
     permissions:
       contents: write
-      id-token: write
     strategy:
       matrix:
         os: [macos-latest, windows-latest]
@@ -38,18 +37,19 @@ jobs:
         run: npm run dist
         shell: bash
 
-      # macOS용 dmg 파일에 Sigstore 서명
-      - name: Sign macOS DMG
+      - name: Upload macOS Artifact
         if: matrix.os == 'macos-latest'
-        uses: sigstore/gh-action-sigstore-python@v2.1.1
+        uses: actions/upload-artifact@v4
         with:
-          release-signing-artifacts: true
-          upload-signing-artifacts: true
-
-      # Windows용 exe 파일에 Sigstore 서명
-      - name: Sign Windows EXE
+          name: MineSquare_Launcher_macOS
+          path: |
+            dist/latest-mac.yml
+            dist/MineSquare Launcher-setup-*.dmg
+      - name: Upload Windows Artifact
         if: matrix.os == 'windows-latest'
-        uses: sigstore/gh-action-sigstore-python@v2.1.1
+        uses: actions/upload-artifact@v4
         with:
-          release-signing-artifacts: true
-          upload-signing-artifacts: true
+          name: MineSquare_Launcher_Windows
+          path: |
+            dist/latest.yml
+            dist/MineSquare Launcher-setup-*.exe
