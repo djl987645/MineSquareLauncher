@@ -80,8 +80,8 @@ jobs:
         with:
           name: MineSquare_Launcher_Windows
           path: |
-            artifacts/Windows/latest.yml
-            artifacts/Windows/MineSquare-Launcher-setup*.exe
+            artifacts/Windows/MineSquare_Launcher_Windows/latest.yml
+            artifacts/Windows/MineSquare_Launcher_Windows/MineSquare-Launcher-setup-*.exe
             
       - name: Checkout Release Artifacts
         uses: actions/download-artifact@v4
@@ -103,7 +103,7 @@ jobs:
         with:
           name: MineSquare_Launcher_macOS
           path: |
-            artifacts/macOS/latest-mac.yml
-            artifacts/macOS/MineSquare-Launcher-setup*.exe
+            artifacts/macOS/MineSquare_Launcher_macOS/latest-mac.yml
+            artifacts/macOS/MineSquare_Launcher_macOS/MineSquare-Launcher-setup-*.dmg
 
 
