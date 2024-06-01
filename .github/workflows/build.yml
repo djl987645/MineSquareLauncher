@@ -43,14 +43,14 @@ jobs:
         if: matrix.os == 'macos-latest'
         uses: sigstore/gh-action-sigstore-python@v2.1.1
         with:
-          inputs: dist/MineSquare-Launcher-setup-1.2.0-arm64.dmg dist/MineSquare-Launcher-setup-1.2.0-x64.dmg
+          inputs: ${{ github.workspace }}/dist/MineSquare-Launcher-setup*.dmg
 
       # Windows용 exe 파일에 Sigstore 서명
       - name: Sign Windows EXE
         if: matrix.os == 'windows-latest'
         uses: sigstore/gh-action-sigstore-python@v2.1.1
         with:
-          inputs: dist/MineSquare-Launcher-setup-1.2.0.exe
+          inputs: ${{ github.workspace }}/dist/MineSquare-Launcher-setup*.exe
 
       - name: Upload macOS Artifact
         if: matrix.os == 'macos-latest'
