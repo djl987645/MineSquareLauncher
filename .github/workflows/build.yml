@@ -77,7 +77,7 @@ jobs:
         with:
           name: MineSquare_Launcher_macOS
           path: |
-            artifacts/macOS/latest.yml
+            artifacts/macOS/latest-mac.yml
             artifacts/macOS/MineSquare-Launcher-setup*.exe
 
       - name: Checkout Release Artifacts
