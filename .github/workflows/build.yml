@@ -42,7 +42,7 @@ jobs:
         if: matrix.os == 'macos-latest'
         uses: sigstore/gh-action-sigstore-python@v2.1.1
         with:
-          inputs: dist/MineSquare Launcher-setup-*.dmg
+          inputs: dist/MineSquare-Launcher-setup-*.dmg
           release-signing-artifacts: true
 
       # Windows용 exe 파일에 Sigstore 서명
@@ -50,7 +50,7 @@ jobs:
         if: matrix.os == 'windows-latest'
         uses: sigstore/gh-action-sigstore-python@v2.1.1
         with:
-          inputs: dist/MineSquare Launcher-setup-*.exe
+          inputs: dist/MineSquare-Launcher-setup-*.exe
           release-signing-artifacts: true
 
       - name: Upload macOS Artifact
@@ -60,7 +60,7 @@ jobs:
           name: MineSquare_Launcher_macOS
           path: |
             dist/latest-mac.yml
-            dist/MineSquare Launcher-setup-*.dmg
+            dist/MineSquare-Launcher-setup-*.dmg
 
       - name: Upload Windows Artifact
         if: matrix.os == 'windows-latest'
@@ -69,4 +69,4 @@ jobs:
           name: MineSquare_Launcher_Windows
           path: |
             dist/latest.yml
-            dist/MineSquare Launcher-setup-*.exe
+            dist/MineSquare-Launcher-setup-*.exe
