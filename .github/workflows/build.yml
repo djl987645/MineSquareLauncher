@@ -10,7 +10,6 @@ jobs:
     runs-on: ${{ matrix.os }}
     permissions:
       contents: write
-      id-token: write
     strategy:
       matrix:
         os: [macos-latest, windows-latest]
@@ -37,7 +36,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run dist
         shell: bash
-        
+
       - name: Upload macOS Artifact
         if: matrix.os == 'macos-latest'
         uses: actions/upload-artifact@v4
@@ -45,7 +44,7 @@ jobs:
           name: MineSquare_Launcher_macOS
           path: |
             dist/latest-mac.yml
-            dist/MineSquare-Launcher-setup-*.dmg
+            dist/MineSquare Launcher-setup-*.dmg
             
       - name: Upload Windows Artifact
         if: matrix.os == 'windows-latest'
@@ -54,7 +53,7 @@ jobs:
           name: MineSquare_Launcher_Windows
           path: |
             dist/latest.yml
-            dist/MineSquare-Launcher-setup-*.exe
+            dist/MineSquare Launcher-setup-*.exe
 
   sign-and-upload:
     needs: release
@@ -68,12 +67,9 @@ jobs:
 
       - name: Sign Windows EXE
         if: runner.os == 'Linux'
-        run: |
-          pwd
-          echo "Current directory: $(pwd)"
-          sigstore/gh-action-sigstore-python@v2.1.1
-          with:
-            inputs: artifacts/Windows/MineSquare_Launcher_Windows/MineSquare-Launcher-setup-*.exe
+        uses: sigstore/gh-action-sigstore-python@v2.1.1
+        with:
+          inputs: artifacts/Windows/MineSquare_Launcher_Windows/MineSquare-Launcher-setup-*.exe
 
       - name: Upload Signed Windows Artifact
         uses: actions/upload-artifact@v4
@@ -91,12 +87,9 @@ jobs:
 
       - name: Sign MacOS DMG
         if: runner.os == 'Linux'
-        run: |
-          pwd
-          echo "Current directory: $(pwd)"
-          sigstore/gh-action-sigstore-python@v2.1.1
-          with:
-            inputs: artifacts/macOS/MineSquare_Launcher_macOS/MineSquare-Launcher-setup-*.dmg
+        uses: sigstore/gh-action-sigstore-python@v2.1.1
+        with:
+          inputs: artifacts/macOS/MineSquare_Launcher_macOS/MineSquare-Launcher-setup-*.dmg
           
       - name: Checkout Release Artifacts
         uses: actions/upload-artifact@v4
