@@ -38,6 +38,20 @@ jobs:
         run: npm run dist
         shell: bash
 
+      # macOS용 dmg 파일에 Sigstore 서명
+      - name: Sign macOS DMG
+        if: matrix.os == 'macos-latest'
+        uses: sigstore/gh-action-sigstore-python@v2.1.1
+        with:
+          inputs: /Users/runner/work/MineSquareLauncher/MineSquareLauncher/dist/MineSquare-Launcher-setup-*.dmg
+
+      # Windows용 exe 파일에 Sigstore 서명
+      - name: Sign Windows EXE
+        if: matrix.os == 'windows-latest'
+        uses: sigstore/gh-action-sigstore-python@v2.1.1
+        with:
+          inputs: D:\a\MineSquareLauncher\MineSquareLauncher\dist\MineSquare-Launcher-setup-*.exe
+
       - name: Upload macOS Artifact
         if: matrix.os == 'macos-latest'
         uses: actions/upload-artifact@v4
@@ -55,17 +69,3 @@ jobs:
           path: |
             dist/latest.yml
             dist/MineSquare-Launcher-setup-*.exe
-            
-      # macOS용 dmg 파일에 Sigstore 서명
-      - name: Sign macOS DMG
-        if: matrix.os == 'macos-latest'
-        uses: sigstore/gh-action-sigstore-python@v2.1.1
-        with:
-          release-signing-artifacts: true
-
-      # Windows용 exe 파일에 Sigstore 서명
-      - name: Sign Windows EXE
-        if: matrix.os == 'windows-latest'
-        uses: sigstore/gh-action-sigstore-python@v2.1.1
-        with:
-          release-signing-artifacts: true
