@@ -37,21 +37,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run dist
         shell: bash
-
-      # macOS용 dmg 파일에 Sigstore 서명
-      - name: Sign macOS DMG
-        if: matrix.os == 'macos-latest'
-        uses: sigstore/gh-action-sigstore-python@v2.1.1
-        with:
-          inputs: ${{ github.workspace }}/dist/MineSquare-Launcher-setup*.dmg
-
-      # Windows용 exe 파일에 Sigstore 서명
-      - name: Sign Windows EXE
-        if: matrix.os == 'windows-latest'
-        uses: sigstore/gh-action-sigstore-python@v2.1.1
-        with:
-          inputs: ${{ github.workspace }}/dist/MineSquare-Launcher-setup*.exe
-
+        
       - name: Upload macOS Artifact
         if: matrix.os == 'macos-latest'
         uses: actions/upload-artifact@v4
@@ -60,7 +46,7 @@ jobs:
           path: |
             dist/latest-mac.yml
             dist/MineSquare-Launcher-setup-*.dmg
-
+            
       - name: Upload Windows Artifact
         if: matrix.os == 'windows-latest'
         uses: actions/upload-artifact@v4
@@ -69,3 +55,47 @@ jobs:
           path: |
             dist/latest.yml
             dist/MineSquare-Launcher-setup-*.exe
+
+  sign-and-upload:
+    needs: release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Release Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: MineSquare_Launcher_macOS
+          path: artifacts/macOS
+
+      - name: Sign macOS DMG
+        if: runner.os == 'Linux'
+        uses: sigstore/gh-action-sigstore-python@v2.1.1
+        with:
+          inputs: artifacts/macOS/MineSquare-Launcher-setup*.dmg
+
+      - name: Upload Signed macOS Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: MineSquare_Launcher_macOS
+          path: |
+            artifacts/macOS/latest.yml
+            artifacts/macOS/MineSquare-Launcher-setup*.exe
+
+      - name: Checkout Release Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: MineSquare_Launcher_Windows
+          path: artifacts/Windows
+
+      - name: Sign Windows EXE
+        if: runner.os == 'Linux'
+        uses: sigstore/gh-action-sigstore-python@v2.1.1
+        with:
+          inputs: artifacts/Windows/MineSquare-Launcher-setup*.exe
+
+      - name: Upload Signed Windows Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: MineSquare_Launcher_Windows
+          path: |
+            artifacts/Windows/latest.yml
+            artifacts/Windows/MineSquare-Launcher-setup*.exe
