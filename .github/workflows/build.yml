@@ -2,6 +2,8 @@ on:
   push:
     tags:
       - "v*"
+permissions:
+  contents: write
 
 jobs:
   release:
@@ -38,17 +40,17 @@ jobs:
       # macOS용 dmg 파일에 Sigstore 서명
       - name: Sign macOS DMG
         if: matrix.os == 'macos-latest'
-        uses: sigstore/gh-action-sigstore-python@v2.1.1
+      - uses: sigstore/gh-action-sigstore-python@v2.1.1
         with:
-          inputs: ./dist/MineSquare-Launcher-setup-*.dmg
+          # Only valid on release events
           release-signing-artifacts: true
 
       # Windows용 exe 파일에 Sigstore 서명
       - name: Sign Windows EXE
         if: matrix.os == 'windows-latest'
-        uses: sigstore/gh-action-sigstore-python@v2.1.1
+      - uses: sigstore/gh-action-sigstore-python@v2.1.1
         with:
-          inputs: ./dist/MineSquare-Launcher-setup-*.exe
+          # Only valid on release events
           release-signing-artifacts: true
 
       - name: Upload macOS Artifact
