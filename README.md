@@ -32,7 +32,7 @@
 
 macOS 사용자 분들은 실행이 안될시 터미널에 다음 명령어를 입력해주세요
 ```
-xattr -cr "/Applications/MinesquareLauncher.app"
+xattr -cr "/Applications/Minesquare Launcher.app"
 ```
 해당 프로그램이 제대로 설치, 동작하지 않는 다면 사용하고 있는 백신에서 제외설정을 하셔야 할 수 있습니다.
 
