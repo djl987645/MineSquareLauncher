@@ -7,7 +7,7 @@
 
 [<p align="center"><img src="https://img.shields.io/github/actions/workflow/status/dscalzi/HeliosLauncher/build.yml?branch=master&style=for-the-badge" alt="gh actions">](https://github.com/dscalzi/HeliosLauncher/actions) [<img src="https://img.shields.io/github/downloads/dscalzi/HeliosLauncher/total.svg?style=for-the-badge" alt="downloads">](https://github.com/dscalzi/HeliosLauncher/releases) <img src="https://forthebadge.com/images/badges/winter-is-coming.svg"  height="28px" alt="winter-is-coming"></p>
 
-<p align="center">경기대학교 마인크래프트 서버 MineSquare에 접속하기 위한 런처로 </p>
+<p align="center">대학교 마인크래프트 서버 MineSquare에 접속하기 위한 런처로 </p>
 <p align="center">다양한 최적화, 그래픽 모드를 포함하고 있습니다.</p>
 
 

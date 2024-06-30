@@ -16,5 +16,5 @@ supportLink = "https://github.com/djl987645/MineSquareLauncher/issues"
 
 [ejs.welcome]
 welcomeHeader = "WELCOME TO MineSquare!"
-welcomeDescription = "경기대 마인크래프트 서버인 마인스퀘어에 어서오세요!"
-welcomeDescCTA = "마크에서도 경기대 캠퍼스 라이프를 즐기세요!"
+welcomeDescription = "대학교 마인크래프트 서버인 마인스퀘어에 어서오세요!"
+welcomeDescCTA = "마크에서도 캠퍼스 라이프를 즐기세요!"

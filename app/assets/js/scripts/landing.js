@@ -685,7 +685,7 @@ async function dlAsync(login = true) {
       proc.stderr.on("data", gameErrorListener);
 
       setLaunchDetails(Lang.queryJS("landing.dlAsync.doneEnjoyServer"));
-
+      
       // Init Discord Hook
       if (
         distro.rawDistribution.discord != null &&
